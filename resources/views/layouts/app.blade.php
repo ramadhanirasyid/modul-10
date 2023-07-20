@@ -12,11 +12,13 @@ initial-scale=1.0">
 
 <body>
     @include('layouts.nav')
-    @include('sweetalert::alert')
+
 
     @yield('content')
-    @stack("scripts")
+
     @vite('resources/js/app.js')
+    @include('sweetalert::alert')
+    @stack("scripts")
 </body>
 
 </html>
